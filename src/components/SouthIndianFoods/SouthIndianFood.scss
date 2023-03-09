@@ -1,0 +1,218 @@
+.headBarRow {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  // background-color: rgb(249 229 189);
+  background: linear-gradient(to right, #f5bf6f, #fafff9, #243e25);
+  justify-content: space-between; /* could also try with space-around */
+  // &.headbar-fixed{
+  //     position: fixed;
+  //     z-index: 10;
+  //     box-shadow: 1px 1px 2px 0 #df2020;
+  // }
+  .logo {
+    width: 224px;
+    height: 160px;
+  }
+  // .logoname{
+  //     // background: #df2020;
+  //     text-align: center;
+  //     border-radius: 14px;
+  //     width: 82px;
+  // }
+  .flex-child {
+    display: flex;
+    color: white;
+    text-shadow: 1px 1px 2px #636162;
+    // justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    // background-color: #ff0000;
+    height: calc(
+      100% - 20px
+    ); /* for demonstration purposes, subtracts top and bottom margin from height */
+    margin: 10px 0px 0px 66px; /* for demonstration purposes */
+    font-family: system-ui;
+    .h-color {
+      color: #f76060;
+    }
+  }
+  .flex-child1 {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    // background-color: #ff0000;
+    height: calc(
+      100% - 20px
+    ); /* for demonstration purposes, subtracts top and bottom margin from height */
+    margin: 10px 0px 0px 240px; /* for demonstration purposes */
+
+    .block {
+      // margin: 28px 0px 0px 0px;
+      width: 100px;
+    }
+    .round1 {
+      color: #b1b3b6;
+      background: white;
+      border-radius: 15px;
+      width: 30px;
+      height: 30px;
+    }
+    .round2 {
+      color: #df2020;
+      background: white;
+      border-radius: 15px;
+      width: 30px;
+      height: 30px;
+      margin: 0px 10px 0px 10px;
+    }
+    .shape {
+      background: white;
+      border-radius: 15px;
+      width: 120px;
+      height: 30px;
+      .cartallign {
+        color: #df2020;
+        margin: 2px 0px 0px 7px;
+      }
+      .content {
+        color: #e6c329;
+        margin-top: 5px;
+      }
+    }
+    .user {
+      background-color: white;
+      border-radius: 15px;
+      width: 30px;
+      height: 30px;
+      margin: 4px 0px 0px 10px;
+    }
+  }
+}
+
+.buttonOption {
+  // background-color: rgb(255 193 128);
+  background: linear-gradient(to right, #ffce85, #fafff9, #3b5e3d);
+  height: 80px;
+  // &.Optionbar-fixed{
+  //     position: fixed;
+  //     z-index: 10;
+  //     box-shadow: 1px 1px 2px 0 #df2020;
+  // }
+  .optionAllign {
+    margin-left: 270px;
+    padding: 20px;
+    .button-all-1 {
+      font-family: system-ui;
+      color: black;
+      font-weight: bold;
+      background-color: white;
+      margin-right: 5px;
+    }
+    .button-all {
+      font-family: system-ui;
+      font-weight: bold;
+      background-color: #df2020;
+      margin-right: 5px;
+    }
+  }
+}
+
+.bodybackground {
+  // background-color: rgb(255 193 128);
+  background: linear-gradient(to right, #ffce85, #fafff9, #3b5e3d);
+  .scrollmenu1 {
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    max-height: 300px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-flow: row;
+    .body-of-contant {
+      margin-top: 10px !important;
+      margin-left: 14px !important;
+      margin-bottom: 100% !important;
+      .card-data {
+        //   border:2px solid black;
+        width: 90%;
+        height: 248px;
+        background-color: white;
+        border-radius: 14px;
+        .image-class {
+          width: 100%;
+          height: 150px;
+          img {
+            width: 100% !important;
+            height: 100%;
+            border-top-right-radius: 12px;
+            border-top-left-radius: 12px;
+          }
+        }
+        .foodName {
+          margin: 3px 0px 0px 0px;
+          font-family: system-ui;
+          font-size: 15px;
+          padding: 10px;
+          font-weight: bold;
+        }
+        .desc {
+          margin: 3px 0px 0px 0px;
+          font-family: system-ui;
+          font-size: 10px;
+          padding: 10px;
+        }
+      }
+      .product__price {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        width: 44px;
+        height: 20px;
+        background: white;
+        border-radius: 20px;
+        .unitName {
+          color: #e6c329;
+        }
+        .num {
+          color: black;
+        }
+      }
+      .addicon {
+        background: #e6a429;
+        color: white;
+        border-radius: 18px;
+        stroke: white;
+        margin-left: 177px;
+        margin-top: -10px !important;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(248, 243, 243, 0);
+  border-radius: 5px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+// .fixedbar{
+//     position: fixed;
+// }
+
+.foodHead {
+  font-family: system-ui;
+  background: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 18px 10px 18px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-left: 32px;
+  margin-top: 12px;
+  box-shadow: 1px 1px 0px 0px #636162;
+}
