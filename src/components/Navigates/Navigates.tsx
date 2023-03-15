@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from "react";
 import BrowseMenu from "../SouthIndianFoods/SouthIndianFood";
-import Login from "../LoginScreen/login";
+import Login from "../LoginModule/LoginScreen/login";
 import RestaurantMenu from "../RestaurantMenu/RestaurantMenu";
 
 export default function Navigates() {
